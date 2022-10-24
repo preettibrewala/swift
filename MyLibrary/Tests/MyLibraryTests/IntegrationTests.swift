@@ -1,4 +1,4 @@
-import XCTest
+/*import XCTest
 @testable import MyLibrary
 
 final class IntegerationTests: XCTestCase {
@@ -18,4 +18,4 @@ final class IntegerationTests: XCTestCase {
 
     }
 
-}
+}*/
