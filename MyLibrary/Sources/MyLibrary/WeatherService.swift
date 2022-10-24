@@ -9,7 +9,7 @@ enum BaseUrl :String {
 }
 
 class WeatherServiceImpl: WeatherService {
-    let url = "https://api.openweathermap.org/data/2.5/weather?lat=44.56&lon=123.26&appid=d8310c9fbcfaee650d22017af4646e00":
+    let url = "https://api.openweathermap.org/data/2.5/weather?lat=44.56&lon=123.26&appid=d8310c9fbcfaee650d22017af4646e00";
 
     func getTemperature(completion: @escaping (_ response: Result<Int /* Temperature */, Error>) -> Void) {
         AF.request(url, method: .get).validate(statusCode: 200..<300).responseDecodable(of: Weather.self) { response in
